@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://ufuture.uitm.edu.my/users/loginForm/1 -->
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+	<link rel="stylesheet" type="text/css" href="./um061196_files/sweetalert2.min.css">
+        
+        <!--<title>i-Learn Portal – UiTM e-Learning Portal </title>Meta -->
+<link href="https://ufuture.uitm.edu.my/favicon.ico" type="image/x-icon" rel="icon"><link href="https://ufuture.uitm.edu.my/favicon.ico" type="image/x-icon" rel="shortcut icon"><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+
+	<script type="text/javascript" async="" src="./um061196_files/analytics.js.download"></script><script async="" src="./um061196_files/analytics.js.download"></script><script type="text/javascript" src="./um061196_files/ruxitagentjs_ICA2SVfhqru_10201200909073022.js.download" data-dtconfig="rid=RID_-578414008|rpid=1232103840|domain=uitm.edu.my|reportUrl=/rb_bed8d9ce-f533-445a-b185-0949b89571e4|app=186f32c692604778|featureHash=ICA2SVfhqru|vcv=2|rdnt=1|uxrgce=1|bp=3|cuc=xv5a9vn8|dpvc=1|md=mdcc1=a#myid|lastModification=1603268986325|dtVersion=10201200909073022|tp=500,50,0,1|uxdcw=1500|vs=2|agentUri=/ruxitagentjs_ICA2SVfhqru_10201200909073022.js"></script><link rel="stylesheet" type="text/css" href="./um061196_files/toastr.min.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/tooltipster.bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/buttons.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/responsive.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/bootstrap-select.min.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/switchery.min.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/bootstrap-toggle.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/sweetalert2.min.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/alertify.min.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/skloader.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/animate.css">
+
+	<link rel="stylesheet" type="text/css" href="./um061196_files/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/icons.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/metismenu.min.css">
+	<link rel="stylesheet" type="text/css" href="./um061196_files/style.css">
+<style></style>    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]><script src="/js/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script><![endif]-->
+    <script>
+        //<![CDATA[
+        (function () {
+            const CURRENT_CACHE_VERSION = '';
+            // Code for localStorage/sessionStorage.
+            if (typeof (Storage) !== "undefined" && CURRENT_CACHE_VERSION !== localStorage.getItem("current_cache_version")) {
+                localStorage.clear();
+                localStorage.setItem("current_cache_version", CURRENT_CACHE_VERSION);
+            }
+            window.CKEDITOR_BASEPATH = '/plugin/ckeditor/';
+        })();
+        //]]>
+    </script>
+
+    <!-- jQuery  -->
+    
+	<script type="text/javascript" src="./um061196_files/modernizr.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/jquery.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/sprintf.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/knockout-min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/toastr.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/imgloader.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/jquery.emojipicker.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/jquery.emojis.js.download"></script>
+        <style type="text/css">
+            .bg-accpunt-pages{
+                background-image: url(/img/background04.jpg);
+                height: 100%;
+                background-position: center;
+                /*background-repeat: no-repeat;
+                background-size: cover;
+                overflow:hidden;*/
+            }
+            .center{
+                margin: auto;
+                width: 460px;
+                background-color: #f1f1f1;
+                padding: 10px;
+                border-radius: 5px;
+                text-align: center;
+            }
+            .account-info{
+                width: 800px;
+                margin: 0 auto;
+            }
+            .account-logo{
+                max-width: 460px;
+                position: relative;
+                margin: 0 auto;
+            }
+            .info{
+                bottom: 80px
+            }
+
+            @media only screen and (max-width: 600px) {
+                .account-box {
+                    margin-top: 50px !important;
+                }
+                .center{
+                    width: auto;
+                }
+                .info{
+                    bottom: auto
+                }
+            }
+        </style>
+    <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style></head>
+
+    <body class="bg-accpunt-pages  breakpoint-992 breakpoint-768 pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="width: 100%;">
+  <div class="pace-progress-inner"></div>
+</div>
+<div class="pace-activity"></div></div>
+        <div id="wrapper">
+            <style type="text/css">
+    .notification-list{
+        padding-left: 11px;
+        padding-right: 15px;
+    }
+    #searchkey{
+        width: 300px
+    }
+</style>
+<!-- Top Bar Start -->
+<div class="topbar">
+
+    <nav class="navbar-custom" style="margin-left: 0">
+
+        <ul class="list-inline float-right mb-0">
+            <li class="list-inline-item notification-list">
+                <a class="nav-link arrow-none waves-light waves-effect" href="https://ufuture.uitm.edu.my/login" role="button" aria-haspopup="false" aria-expanded="false">
+                    LOG IN
+                </a>
+            </li>
+            <li class="list-inline-item notification-list">
+                <a class="nav-link arrow-none waves-light waves-effect" href="https://ufuture.uitm.edu.my/signup" role="button" aria-haspopup="false" aria-expanded="false">
+                    SIGN UP
+                </a>
+            </li>
+
+        </ul>
+
+        <ul class="list-inline menu-left mb-0">
+            <li class="hide-phone app-search">
+                <form action="https://ufuture.uitm.edu.my/search" class="form-horizontal" id="loginFormForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"></div>                    <input name="data[key]" class="form-control" placeholder="Search..." id="searchkey" type="text">                    <a href="https://ufuture.uitm.edu.my/users/loginForm/1#" onclick="$(this).closest(&#39;form&#39;).submit()" style="left: 263px"><i class="fa fa-search"></i></a>
+                </form>            </li>
+        </ul>
+
+    </nav>
+
+</div>
+<!-- Top Bar End -->            <!-- HOME -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <div class="wrapper-page">
+
+                                <div class="account-pages">
+                                    <div class="row account-logo">
+                                        <!--div class="col-md-6">
+                                            <p style="margin-bottom: 0px;"><b>UiTM MOOC </b><br>Platform</p> 
+                                        </div-->
+                                        <!--div class="col-md-6" style="text-align: right"-->
+                                        <div class="" style="text-align: right; padding-left: 35px;">
+                                            <img height="45px" src="./um061196_files/uitm_tpedit.png">
+                                            <!--img height='75px' src="/img/logo/logo-mooc-baru_trans.png"-->
+                                        </div>
+                                    </div>
+                                    <div class="account-box">
+                                        <div class="account-logo-box" style="padding-top: 15px">
+    <h3 class="text-uppercase font-bold">STUDENTS LOGIN</h3>
+</div>
+<div class="account-content">
+    <form action="https://ufuture.uitm.edu.my/users/loginForm/1" class="form-horizontal" autocomplete="off" id="UserLoginFormForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"></div>    <div class="form-group m-b-20 row">
+        <label for="username" class="col-md-3 col-form-label">Username</label>
+        <div class="col-md-9">
+            <div class="input text required"><input name="data[User][username]" class="form-control text-center bg-gray" placeholder="Student ID" required="required" maxlength="255" type="text" id="UserUsername"></div>        </div>
+    </div>
+    <div class="form-group row m-b-20">
+        <label for="password" class="col-md-3 col-form-label">Password</label>
+        <div class="col-md-9">
+            <div class="input password required"><input name="data[User][password]" class="form-control text-center bg-gray" placeholder="iStudent Password" required="required" type="password" id="UserPassword"></div>        </div>
+    </div>
+    <div class="form-group row text-center m-t-10">
+        <div class="col-12">
+            <button class="btn btn-md btn-block btn-primary waves-effect waves-light" type="submit">LOG IN</button>
+        </div>
+    </div>
+    <div class="form-group row text-center m-t-10">
+        <div class="col-12">
+            <a href="https://ufuture.uitm.edu.my/login" class="btn btn-md btn-block btn-custom btn-bordered waves-effect waves-light">
+                <i class="fa fa-arrow-circle-left"></i> BACK
+            </a>
+        </div>
+    </div>
+    <div class="form-group row text-center m-t-10">
+        <div class="col-12">
+            <a href="https://ufuture.uitm.edu.my/forgot" class="text-muted pull-right"><small>Reset Password</small></a>
+        </div>
+    </div>
+
+    </form>    <div class="row m-t-50">
+        <div class="col-sm-12 text-center">
+            <p class="text-muted">Don't have an account? <a href="https://ufuture.uitm.edu.my/signup" class="text-dark m-l-5"><b>Sign Up</b></a></p>
+        </div>
+    </div>
+</div>
+
+<!--a href="/forgot" class="btn margin-none">Forgot password?</a-->
+                                    </div>
+                                    <!-- end card-box-->
+                                </div>
+                            </div>
+                            <!-- end wrapper -->
+                        </div>
+                        <div class="col-md-12 info">
+                            <div class="center">
+                                <p style="margin-bottom: 0px;"><b>Contact Us </b><br>IT Department, iCEPS : 03 - 5544 8369 / 03 - 5544 8174</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END HOME -->
+        </div>
+
+        <script>
+            var resizefunc = [];
+        </script>
+        <script type="text/javascript">
+//<![CDATA[
+function imageExists(image_url) {
+    var http = new XMLHttpRequest();
+    http.open('HEAD', image_url, false);
+    http.send();
+    return http.status != 404;
+}
+function boolval(str){
+    if (typeof (str) === 'undefined' || str == null){
+        return false;
+    }
+    var boolmap = { 
+        'no'    : false ,
+        'NO'    : false ,
+        'FALSE' : false ,
+        'false' : false,
+        'yes'   : true ,
+        'YES'   : true ,
+        'TRUE'  : true ,
+        'true'  : true ,
+        1       : true,
+        0       : false,
+        "1"     : true,
+        "0"     : false
+    };
+
+    return ( str in boolmap && boolmap.hasOwnProperty(str)) ? boolmap[ str ] :  !!str ;
+};
+
+
+var App = {
+    Navi:{"handlers":[],"handler":false,"group_id":false,"course_id":false,"course_group_id":false},
+    Path:{"base":"","img":"/img/","controller":"users","action":"loginForm","here":"/users/loginForm/1","plugin":null,"named":["1"]},
+    Actions:{"Announcement":{"icon":"bullhorn","param":"today","title":"Announcement","url":"/announcements/index/%s/%s"},"Assessment":{"icon":"flask","title":"Assessment","url":"/assessment/banks/index/%s"},"Assignment":{"icon":"flask","title":"Assignment","url":"/assignments/dashboard/home/%s"},"Ees":{"icon":"flask","title":"Entrance / Exit Survey","url":"/ess/dashboard/home/%s"},"GAssessment":{"icon":"flask","title":"Assessment","url":"/assessment/banks/index/%s"},"GAssignment":{"icon":"flask","title":"Assignment","url":"/assignments/dashboard/home/%s"},"Contents":{"icon":"cloud-download","title":"Course Content","url":"/contents/index/t:%s/cid:%s"},"GContents":{"icon":"cloud-download","title":"Group Content","url":"/contents/index/cid:%s"},"GCAssessment":{"icon":"cloud-download","title":"Assessment Marks","url":"/maintenance/index"},"JoinGroup":{"icon":"plus","title":"Join Group","url":"/courses/join_group/%s"},"Forumv2":{"icon":"comments","title":"Course Forum","url":"/forumsv2/lobby/index/%s"},"GForumv2":{"icon":"comments","title":"i-Discuss","url":"/forumsv2/lobby/index/%s/%s"},"Forum":{"icon":"comments","title":"Forum","url":"/forums/index/t:%s/id:%s"},"GMember":{"icon":"meh-o","title":"Members","url":"/course_group_users/members/%s"},"Glossary":{"icon":"info","title":"Glossary","url":"/course_glossaries/index/%s"},"Member":{"icon":"meh-o","title":"Member","url":"/group_users/members/%s"},"References":{"icon":"info","title":"References","url":"/course_references/index/cid:%s"},"LeaveGroup":{"icon":"info","title":"Leave Group","url":"/courses/leave_spec_group/cid:%s"},"Summary":{"icon":"pie-chart","title":"Summary","url":"/courses/summary/%s"}},
+    Menus:{"Course":["Summary","Announcement","Contents","Assessment","Assignment","Ees","Glossary","References","Forumv2","JoinGroup"],"CourseGroup":["Announcement","GContents","GForumv2","GAssessment","GMember","LeaveGroup"],"Group":["Announcement","Forum","Member"]},
+    ResCode:{"GRADEBOOK_INVALID":0,"ATTEMPT_RUNNING_SESSION":2,"ATTEMPT_LOCK":3,"ATTEMPT_INVALID_SESSION":4,"ATTEMPT_SEQ_SAVE_ERROR":5,"ATTEMPT_LOCK_ERROR":6,"ATTEMPT_MAX_REACHED":7,"LAST_ATTEMPT_ERROR":10,"LAST_ATTEMPT_OK":11,"LAST_ATTEMPT_EXPIRING":12,"CREATE_ATTEMPT_SUCCESS":13,"SAVE_CREATE_ATTEMPT_SUCCESS":14,"GRADEBOOK_EXPIRED":20,"GRADEBOOK_NO_QUESTIONS":21,"GRADEBOOK_START_DATETIME_ERROR":22,"GRADEBOOK_END_DATETIME_ERROR":23,"GRADEBOOK_COMPARE_DATETIME_ERROR":24,"GRADEBOOK_START_GREATER_NOW":25,"GRADEBOOK_END_GREATER_NOW":26,"GRADEBOOK_SIZE_ERROR":27,"GRADEBOOK_DATETIME_FILTER_SUCCESS":28,"GRADEBOOK_WHITELIST_EMPTY":29,"GRADEBOOK_DURATION_ERROR":30,"SUCCESS_NEW_SESSION":31,"PASSWORD_REQUIRED":32,"PASSWORD_ERROR":33,"EXPIRING_SESSION":35,"EXPIRED_SESSION":36,"LOCK_OR_NOT_ACTIVE":37,"GRADEBOOK_ATTEMPT_UPDATE_ERROR":38,"CREATE_NEW_ATTEMPT_ERROR":39,"MISSING_ARGUMENTS":40,"INVALID_COURSE_PERMISSION":41,"BANK_NOT_SET":50},
+    Refresh: function () {
+        $('ul.collapse').off('show.bs.collapse').off('hidden.bs.collapse');
+        $('ul.collapse').on('show.bs.collapse', function (e)
+        {
+            e.stopPropagation();
+            $(this).closest('li').addClass('active');
+        }).on('hidden.bs.collapse', function (e) {
+            e.stopPropagation();
+            $(this).closest('li').removeClass('active');
+        });
+        $('body').on('show.bs.collapse', 'ul.collapse', function (e) {
+            e.stopPropagation();
+            if ($(this).closest('#menu').length) {
+                if ($(this).parents('.hasSubmenu').length != 1)
+                    return;
+                var a = $('#menu > div > ul > li.hasSubmenu.active > ul').not(this);
+                a.removeClass('in').addClass('collapse').removeAttr('style').closest('.hasSubmenu.active').removeClass('active');
+            }
+        }).on('shown.bs.collapse', 'ul.collapse', function (e) {
+            e.stopPropagation();
+            if ($(this).closest('#menu').length)
+                $('#menu *').getNiceScroll().resize();
+        });
+        $('body').on('change', '#menu_switch', function () {
+            var w = $(this).parents('#menu'), w_fusion = w.find('#sidebar-fusion-wrapper'),
+                    nav = $(this).val();
+            if (w_fusion.length) {
+                w_fusion.find('> ul').addClass('hide');
+                w_fusion.find('#' + nav).removeClass('hide');
+                $('#menu *').getNiceScroll().resize();
+            }
+            resizeNiceScroll();
+
+        });
+        $('body').on('show.bs.tab', '.btn-avatar [data-toggle="tab"]', function (e) {
+            e.stopPropagation();
+            $('.btn-avatar [data-toggle="tab"]').parent().removeClass('active');
+        });
+    },
+    MenuHistory : {
+        parent : [],
+        current : false,
+        root : false
+    }
+};
+var Router = {
+    url: function (d) {
+        if (typeof (d) === "string") {
+            var k = d.replace(/^http:\/\//, ""), m = k.split("/"), j = [];
+            if (k !== d) {
+                m.splice(0, 1);
+            }
+            j.base = m[0];
+            j.controller = m[1];
+            j.action = m[2];
+            return j;
+        }
+        var h = App.Path.plugin, g = App.Path.controller, e = App.Path.action, a = [];
+        var o = App.Path.pass, c = App.Path.named;
+        a.push(App.Path.base);
+        if (typeof (d.controller) !== "undefined") {
+            g = d.controller
+        }
+        if (typeof (d.plugin) !== "undefined") {
+            h = d.plugin;
+        }
+        if (typeof (d.action) !== "undefined") {
+            e = d.action;
+        }
+        if (typeof (d.named) !== "undefined") {
+            c = d.named;
+        }
+        if (typeof (d.pass) !== "undefined") {
+            o = d.pass;
+        }
+        if (h !== "") {
+            a.push(App.Path.plugin);
+        }
+        a.push(g);
+        a.push(e);
+        for (var f = 0, b = o.length; f < b; f++) {
+            a.push(o[f]);
+        }
+        if (c.length > 0) {
+            var n = 0;
+            for (n in c) {
+                a.push(n + ":" + c[n]);
+            }
+        }
+        return a.join("/");
+    }};
+(function () {
+    var iframes = document.getElementsByTagName('iframe');
+    $.each(iframes,function(k,iframe){
+        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+        if (iframeWin.document.body) {
+            iframe.onload = function(){iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;};
+        }
+    });
+})();var AppModel = new function () {
+    var self = this;
+    //SIDEBAR
+    self.SdbrCourseGroupDictionary = {};
+    self.SdbrCourses = ko.observableArray([]);
+    self.DelSdbrCourseGroup = function (courseid, gid) {
+        if (typeof (self.SdbrCourseGroupDictionary[courseid]) === "undefined") {
+            self.SdbrCourseGroupDictionary[courseid] = [];
+        }
+        if (self.SdbrCourseGroupDictionary[courseid].length === 0) {
+            return;
+        }
+        $('#menu_li_' + courseid + "_" + gid).remove();
+        var indexof = self.SdbrCourseGroupDictionary[courseid].indexOf(gid);
+        self.SdbrCourseGroupDictionary[courseid].splice(indexof, 1);
+        if (self.SdbrCourseGroupDictionary[courseid].length === 0) {
+            self.SdbrCourses.remove(function (course) {
+                return course.id === courseid;
+            });
+            $('#menu_li_' + courseid).remove();
+        }
+        App.Refresh();
+    };
+    self.SdbCourseClick = function(e){
+      if(App.Navi.course_id == e.id)
+      return;
+
+        $("#menu_"+App.Navi.course_id).removeClass('in');
+        //$("#menu_li_"+App.Navi.course_id).collapse();
+        $("#menu_li_"+App.Navi.course_id).removeClass('collapse');
+        $("#menu_li_"+App.Navi.course_id).removeClass('active');
+        App.Navi.course_id = e.id;
+    };
+    self.AddSdbrCourse = function(cid){
+        var menu_content ="",active = '';
+        var inCourse =  (App.Navi.course_id===cid);
+        if (inCourse){
+            active = 'active';
+            App.MenuHistory.root = "menu_l0_course";
+            App.MenuHistory.parent.push("menu_li_" + cid);
+        }
+
+        $.each(App.Menus.Course, function (k, v) {
+            
+            
+            var m = '', a = App.Actions[v], url = App.Path.base;
+            if(typeof a == 'undefined'){
+                return;
+            }else if(a.title == App.Navi.handlers[0] && inCourse && App.Navi.course_group_id === false){
+                m += "<li class='active'>";
+                active = 'active';
+            }else{
+               m +=  "<li>";
+            }
+            switch(v){
+                case "Assessment":
+                    var tmpurl = App.Path.base + a.url.replace("%s", "");
+                    url += sprintf(a.url, cid);
+                    break;
+                case 'Contents':
+                case 'Forum':
+                case 'Announcement':
+                    url += sprintf(a.url, "c", cid);
+                    break;
+                default:
+                    url+= sprintf(a.url, cid);
+                    break;
+            }
+            url+= (typeof(a.params)!=="undefined")?a.params:"";
+            menu_content+=m+sprintf('<a href="%s"><i class="fa fa-%s"></i><span>%s</span></a></li>', url, a.icon, a.title);
+        });
+        self.SdbrCourses.push({
+            id: cid,
+            menu_id: "menu_" + cid,
+            menu_content: menu_content,
+            menu_li_id:"menu_li_"+cid,
+            ids:"li_"+cid,
+        });
+        
+        // FOR EXPEND MENU
+		$("#li_"+cid).on('click', function (e) {
+			
+			// LOCALSTORAGE
+			var courseidz = sessionStorage.getItem('cid');
+			
+			if(courseidz !== cid && courseidz !== '' && courseidz !== null){
+				sessionStorage.setItem('cid', '');
+				
+				var bodysub = $("#menu_li_"+courseidz)[0];
+				bodysub.className = "hasSubmenu";
+					
+				var n = $("#menu_li_"+courseidz).children('ul')[0];
+				n.className = 'collapse';
+				n.style.height = '1px';	
+				
+			}
+			if (Boolean(sessionStorage.getItem('cid'))) {
+				sessionStorage.setItem('cid', '');
+			} else {
+				sessionStorage.setItem('cid', cid);	
+			}
+		});
+		
+		if (sessionStorage.getItem('cid') === null) {
+			//hide or show menu by default
+			//do not forget to set a htlm5 cookie
+		}else{
+			
+		   if(sessionStorage.getItem('cid') === cid){
+				//code when menu is visible
+				var ccid = sessionStorage.getItem('cid');
+				var bodysub = $("#menu_li_"+ccid)[0];
+				bodysub.className = bodysub.className + " active";
+
+					var n = $("#menu_li_"+ccid).children('ul')[0];
+					n.className = n.className + ' in';
+					n.style.height = 'auto';
+		   }else{
+			 //code when menu is hidden
+		   }
+		}
+    }
+    self.AddSdbrCourseGroup = function (courseid, gid, gname) {
+
+        if (typeof (self.SdbrCourseGroupDictionary[courseid]) == "undefined") {
+            self.SdbrCourseGroupDictionary[courseid] = [];
+        }
+
+        if (self.SdbrCourseGroupDictionary[courseid].length === 0) {
+            self.AddSdbrCourse(courseid);
+        }
+        self.SdbrCourseGroupDictionary[courseid].push(gid);
+
+        var h ='<li id="menu_li_'+courseid+"_"+gid+'" class="hasSubmenu"><a href="#menu_'+courseid+'_' + gid + '" data-toggle="collapse" class="collapsed">';
+        h += '<i class="fa fa-users"></i>';
+        h += '<span data-bind="text:id">' + gname + '</span></a>';
+        h += '<ul class="collapse" id="menu_'+courseid+'_' + gid + '">';
+
+        $.each(App.Menus.CourseGroup, function (k, v) {
+            var a = App.Actions[v];
+            var url = App.Path.base;
+            var m = '';
+            
+            if(App.Navi.course_group_id === gid && a.title == App.Navi.handlers[0]){
+                App.MenuHistory.parent.push("menu_li_"+courseid+"_"+gid);
+                m+="<li class='active'>";
+            }else{
+                m+="<li>";
+            }
+            
+            switch(v){
+                case 'GForumv2':
+                    url += sprintf(a.url, courseid, gid);
+                    break;
+                case 'Forum':
+                case 'Announcement':
+                    url += sprintf(a.url, "cg", gid);
+                    break;
+                default:
+                    url+= sprintf(a.url, gid);
+                    break;
+            }
+            m+='<a href="%s"><i class="fa fa-%s"></i><span>%s</span></a></li>';
+            url+= (typeof(a.params)!=="undefined")?a.params:"";
+            h += sprintf(m,url, a.icon, a.title);
+        });
+
+        h += '</ul></li>';
+        $("#menu_" + courseid).append(h);
+        App.Refresh();
+    };
+
+  
+    /* View Render */
+    self.TemplateRender = function (data) {
+        return "Template" + data.view;
+    };
+    self.AfterTemplateRendering = function(data){
+        var view = self.SelectedAnswerView();
+        if (view instanceof Array){
+            view = view[0];
+        }
+
+        $('#addmore').show();
+    };
+  
+   
+    //Forums
+    self.ForumTopUsers = ko.observableArray([]);
+    self.addForumTopUsers = function(data){
+        self.ForumTopUsers.removeAll();
+        for(var i = 0;i< data.length;i++){
+            var user_id = data[i].Forum.user_id;
+            var d = data[i];
+            self.ForumTopUsers.push({
+                name:d.UitmUser.name,
+                count:d.Forum.count,
+                url:App.Path.base+"/users/profile/"+user_id
+            });
+        }
+    };
+    self.ForumLatestReplies = ko.observableArray([]);
+    self.addForumLatestReplies = function(data){
+        self.ForumLatestReplies.removeAll();
+        for(var i = 0;i< data.length;i++){
+            var d = data[i];
+            self.ForumLatestReplies.push({
+                name:d.UitmUser.name,
+                timestamp:d.Post.created,
+                url:App.Path.base+"/forum_threads/view/"+d.Post.thread_id+"/t:"+d.Post.ccgg_type+"/id:"+d.Post.ccgg_id,
+                title:d.Post.content,
+            });
+        }
+        $('abbr.timeago').timeago();
+    };
+    self.ForumLatestTopics = ko.observableArray([]);
+    self.addForumLatestTopics = function(data){
+    	self.ForumLatestTopics.removeAll();
+        for(var i = 0;i< data.length;i++){
+            var d = data[i];
+            self.ForumLatestTopics.push({
+                name:d.UitmUser.name,
+                timestamp:d.Forum.published,
+                url:d.Forum.url,
+                title:d.Forum.content,
+            });
+        }
+        $('abbr.timeago').timeago();
+    };
+    // Ini utk notifications dan msgs
+    self.Notifications = ko.observableArray([]);
+    self.AddNotification = function (data) {
+        
+        var id = (data.Message.parent_id !== null)?data.Message.parent_id:data.Message.id;
+        var msg = data.Message.message.substring(0, 100);
+        if (msg !== data.Message.message){
+            msg+="...";
+        }
+
+        self.Notifications.push({
+            name: data.From.name,
+            message: msg,
+            from_id: data.From.id,
+            user_url: App.Path.base+"/users/profile/"+data.From.id,
+            user_image: App.Path.base +  "/img/people/empty.jpg",
+            url: App.Path.base+"/message/index/"+data.From.id,
+            profile: App.Path.base+"/users/profile/"+data.From.id,
+            timestamp: data.Message.created,
+        });
+        $('abbr.timeago').timeago();
+    };
+    self.Announcements = ko.observableArray([]);
+    self.AddAnnouncement = function (data) {
+        $("#AnnounceNotification").show();
+//        var imgsrc = App.Path.base + "/medias/fetch/" + data.UserInfo.media_id,
+//                src = (imageExists(imgsrc)) ? imgsrc : App.Path.img + "people/empty.jpg";
+        self.Announcements.push({
+            img_src: App.Path.base +  "/img/people/empty.jpg",
+            id: data.id,
+            url: data.ActivityStream.url,
+            body: data.ActivityStream.content,
+            title: data.ActivityStream.title,
+            timestamp: data.ActivityStream.published
+        });
+        $('abbr.timeago').timeago();
+    };
+    self.MsgModalDatas = ko.observableArray([]);
+    self.MsgModalCount = ko.computed(function () {
+        var length = self.MsgModalDatas().length;
+        var output = length;
+        output += " Message";
+        output += (length != 1) ? "s" : "";
+        return output;
+    }, this);
+
+    self.addMsgModalData = function (data) {
+        // var img_id = (data.FromInfo.picture_id !== null)?data.FromInfo.picture_id:data.FromInfo.media_id,
+        //     imgsrc = App.Path.base + "/medias/fetch/" + img_id, src = (imageExists(imgsrc)) ? imgsrc : App.Path.img + "people/empty.jpg";
+        var msg = data.Message.message.substring(0, 100);
+        if (msg !== data.Message.message){
+            msg+="...";
+        }
+        var id = (data.Message.parent_id !== null)?data.Message.parent_id:data.Message.id;
+        self.MsgModalDatas.push({
+            image: App.Path.base + "/img/people/empty.jpg",
+            name: data.From.name,
+            message: msg,
+            url: App.Path.base+"/message/index/"+data.From.id,
+            profile: App.Path.base+"/users/profile/"+data.From.id,
+            timestamp: data.Message.created,
+        });
+        $('abbr.timeago').timeago();
+    };
+
+
+    self.Tags = ko.observableArray([]);
+    self.TagLists = [];
+    self.TagObject = $("#tagme-text");
+    self.addManyTags = function(data){
+        $.each(data,function(k,v){
+            var tag_value = v.name;
+            if ($.inArray(tag_value, self.TagLists) !== -1) {
+                $("#alert-for-tag2").show();
+                return;
+            }
+            self.TagLists.push(tag_value);
+            var x = self.TagLists.length - 1 | 0;
+            self.Tags.push({
+                name: tag_value,
+                key_name: ko.observable(sprintf("data[Tag][%d][name]", x))
+            });
+        });
+    }
+    self.addTags = function () {
+        $("#alert-for-tag").hide();
+        $("#alert-for-tag2").hide();
+        var tag_value = self.TagObject.val();
+        self.TagObject.val("");
+        if ($.inArray(tag_value, self.TagLists) !== -1) {
+            $("#alert-for-tag2").show();
+            return;
+        }
+        self.TagLists.push(tag_value);
+
+        var x = self.TagLists.length - 1 | 0;
+        self.Tags.push({
+            name: tag_value,
+            key_name: ko.observable(sprintf("data[Tag][%d][name]", x))
+        });
+    };
+
+
+   
+    /* Contents new modeling */
+    self.ContentUploadProgress = ko.observable(0);
+    self.ContentUploads = ko.observableArray([]);
+    self.ContentUploadAdded = function(data,file){
+        function formatSizeUnits(bytes){
+            if      (bytes>=1000000000) {bytes=(bytes/1000000000).toFixed(2)+' GB';}
+            else if (bytes>=1000000)    {bytes=(bytes/1000000).toFixed(2)+' MB';}
+            else if (bytes>=1000)       {bytes=(bytes/1000).toFixed(2)+' KB';}
+            else if (bytes>1)           {bytes=bytes+' bytes';}
+            else if (bytes==1)          {bytes=bytes+' byte';}
+            else                        {bytes='0 byte';}
+            return bytes;
+        }
+        $.each(data.files, function (index, file) {
+            var newsize = formatSizeUnits(file.size);
+            var id = CryptoJS.MD5(file.name).toString();
+            self.ContentUploads.push({
+                id:id,
+                name:file.name,
+                error:ko.observable(""),
+                percent:ko.observable('width:0%;'),
+                size:newsize,
+            });
+        });
+    };
+    self.DashboardBrowsers = ko.observableArray([]);
+    self.DashboardOs = ko.observableArray([]);
+    self.DashboardUsers = ko.observableArray([]);
+    self.DashboardLinks = ko.observableArray([]);
+    self.DashboardReferers = ko.observableArray([]);
+   // self.DashboardOnline = [];
+    self.DashboardLogins = [];
+    self.DashboardGet = function () {
+        $.get(App.Path.base + "/dashboards/user_stats", function (d, s) {
+            var count = 0;
+            $.each(d.Browsers, function (k, v) {
+                self.DashboardBrowsers.push(v);
+            });
+            $.each(d.Os, function (k, v) {
+                self.DashboardOs.push(v);
+            });
+            $.each(d.Users, function (k, v) {
+                self.DashboardUsers.push(v);
+            });
+            $.each(d.Links, function (k, v) {
+                if (count < 5) {
+                    count++;
+                    self.DashboardLinks.push(v);
+                }
+            });
+            count = 0;
+            $.each(d.Referers, function (k, v) {
+                if (count < 5) {
+                    count++;
+                    self.DashboardReferers.push(v);
+                }
+            });
+            var DashboardOnline = [];
+            var xaxis = [];
+            $.each(d.Online, function (k, v) {
+                DashboardOnline.push([
+                    v.dates, v.count
+                ]);
+                xaxis.push(v.dates);
+            });
+            $('#access_graph').highcharts({
+                credits: {enabled: false},
+                chart: {type: 'line'},title: {text: 'One Week User Access Statistic'},
+                xAxis: { categories: xaxis.reverse(),title: {text: 'day'},
+                },
+                yAxis: {title: {text: 'Access Count'}, min: 0},
+                series: [{name: 'access',data: DashboardOnline.reverse()
+                    }]
+            });
+            
+            var DashboardLogin = [];
+            xaxis = [];
+            $.each(d.Login, function (k, v) {
+                DashboardLogin.push([
+                    v[0].dates, parseInt(v[0].count)
+                ]);
+                xaxis.push(v.dates);
+            });
+            $('#login_graph').highcharts({
+                credits: {enabled: false},
+                chart: {type: 'line'},
+                title: {text: 'User Login Statistic'},
+                xAxis: { categories: xaxis.reverse(),title: {text: 'day'},
+                },
+                yAxis: {title: {text: 'Login Count'}, min: 0},
+                series: [{name: 'access', data: DashboardLogin.reverse() }]
+            });
+		
+
+	       $.get(App.Path.base + "/dashboards/campus_active", function (d, s) {
+                var yaxis = [];
+                $.each(d.CampusActive, function (k, v) {
+                    yaxis.push(v);
+                });
+            
+                Morris.Bar({
+                    element: 'campus_active',   data: yaxis,   xkey: 'name',    ykeys: ['count'],    labels: ['2016']
+                });
+            });
+        });
+    };
+    self.ContentStartingUpload = function(data){ };
+    self.ContentCancelUpload = function(data){    }
+    self.ContentDeleteUpload = function(data){
+        self.ContentUploads.remove(data);
+    }
+       
+};
+
+ko.applyBindings(AppModel);
+
+//]]>
+</script>
+	<script type="text/javascript" src="./um061196_files/tether.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/bootstrap.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/metisMenu.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/waves.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/jquery.slimscroll.js.download"></script>
+
+	<script type="text/javascript" src="./um061196_files/switchery.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/bootstrap-toggle.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/select2.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/bootstrap-select.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/tooltipster.bundle.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/jquery.tooltipster.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/sweetalert2.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/parsley.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/sidr.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/nicescroll.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/breakpoints.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/pace.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/holder.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/core.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/timeago.js.download"></script>
+
+	<script type="text/javascript" src="./um061196_files/vue.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/alertify.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/jquery.dataTables.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/dataTables.bootstrap.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/jquery.knob.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/bootstrap-select.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/bootstrap-datepicker.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/jquery.dataTables.min.js(1).download"></script>
+	<script type="text/javascript" src="./um061196_files/dataTables.bootstrap4.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/dataTables.buttons.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/buttons.bootstrap4.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/jszip.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/pdfmake.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/vfs_fonts.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/buttons.html5.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/buttons.print.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/buttons.colVis.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/dataTables.responsive.min.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/responsive.bootstrap4.min.js.download"></script>
+
+	<script type="text/javascript" src="./um061196_files/jquery.core.js.download"></script>
+	<script type="text/javascript" src="./um061196_files/jquery.app.js.download"></script>
+<script type="text/javascript">//<![CDATA[
+/*(function () {
+        "use strict";
+        var tFn = function () {
+            $.getJSON('/messages/notification', function (data) {
+                //tricy
+                if (data.data.length > 0) {
+                    data = data.data;
+                    $("#MessageNotification").show();
+                    $.each(data, function (k, v) {
+                        AppModel.AddNotification(v);
+                    });
+                }
+                $(function() {
+                    // $("img.lazyload").lazyload();
+                });
+
+            });
+            $.getJSON('/activity/json', function (data) {
+                //tricy
+                var d = data.data;
+                if (d.length > 0) {
+                    $.each(d, function (k, v) {
+                        AppModel.AddAnnouncement(v);
+
+                    });
+                }
+                $(function() {
+                    // $("img.lazyload").lazyload();
+                });
+            });
+        };
+
+        setTimeout(tFn, 3000);
+    })();*/
+    (function () {
+        "use strict";
+        if (App.MenuHistory.root !== false) {
+            $($("#" + App.MenuHistory.root).closest("li").children("a").attr('href')).collapse();
+            $.each(App.MenuHistory.parent, function (k, v) {
+                $($("#" + v + " > a").attr('href')).collapse();
+            });
+            $(App.MenuHistory.current).addClass("active");
+        } else if (App.Navi.handler !== false) {
+            if (App.Navi.handler.indexOf("Sufo") === 0) {
+                $("#menu_l0_sufo").collapse();
+            } else if (App.Navi.handler.indexOf("User") === 0) {
+                $("#menu_l0_user").collapse();
+            }
+        }
+        // console.log(App.MenuHistory.current);
+    })();
+
+    (function () {
+        "use strict";
+        if (!Modernizr.touch && $('#menu').is(':visible'))
+            $('.container-fluid').removeClass('menu-hidden');
+
+        if (Modernizr.touch)
+            $('#menu').removeClass('hidden-xs');
+
+        // main menu visibility toggle
+        $('body').on('click', '.navbar.main .btn-navbar.btn-open-left, #menu .btn-navbar.btn-open-left', function (e)
+        {
+            e.preventDefault();
+            // handle menu toggle button action
+
+            if (typeof $.fn.sidr !== 'undefined')
+            {
+                if ($('.sidr.right').is(':visible'))
+                {
+                    $.sidr('close', 'menu-right');
+                    return;
+                }
+            }
+
+            $('.container-fluid').toggleClass('menu-hidden');
+            //        $('#menu').toggleClass('hidden-xs');
+            var $footer = $('#footer');
+            if ($footer.css('left') === "0px") {
+                $footer.removeAttr('style');
+            } else {
+                $footer.css({"left": "0px"});
+            }
+            resizeNiceScroll();
+        });
+
+    })();
+    
+    // (function(){
+    //     $(window).load(function(){$.get('/tracker/load',function(e){
+    //         if(e.id != 0){
+    //             $(window).on('beforeunload', function(a) {
+    //                 $.get('/tracker/unload/'+e.id);
+    //             });        
+    //         }
+    //     })});
+        
+    // })();
+    
+    
+
+//    $('#sk-overlay, #sk-overlay-back').fadeIn(500);
+    $(document).ready(function(){
+        App.Refresh();
+         
+    });
+    
+//]]>
+</script>
+<!-- Google Analytics --><script type="text/javascript">(function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', '', 'auto');
+            ga('send', 'pageview');</script><!-- End Google Analytics -->
+
+<script async="" src="./um061196_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139242129-1');
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics support@ined.uitm.edu.my -->
+<!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-117845915-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-117845915-1');
+</script-->
+    
+</body></html>
