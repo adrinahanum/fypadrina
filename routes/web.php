@@ -1,6 +1,8 @@
 <?php
 use App\Pcname;
 use App\User;
+use App\Service;
+use App\Times;
 //use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,4 +53,18 @@ Route::get('/pcname/create', 'PCnameController@create');
 Route::get('/pcname/{pcname}', 'PCnameController@show');
 Route::get('/pcname/{pcname}/edit', 'PCnameController@edit');
 
-Route::get('/user/create', 'UserController@create');
+Route::get('/service', 'ServiceController@index');  //baru buat,nanti tengok balik
+Route::post('/service', 'ServiceController@store');
+Route::match(['GET', 'POST'], '/service/create', 'ServiceController@create')->name('service.create');
+Route::get('/service/{service}', 'ServiceController@show');
+Route::get('/service/{service}/edit', 'ServiceController@edit');
+
+//Route::get('/service', 'TimesController@index');  
+//Route::post('/service', 'ServiceController@store');
+//Route::get('/service/create', 'ServiceController@create');
+Route::get('/service/{times}', 'ServiceController@show');
+Route::get('/service/{times}/edit', 'TimesController@edit');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
